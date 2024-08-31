@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    background-color: aqua;
+}
+.section{
+    min-height: 100vh;
+    padding-top: 100px;
+}
+.container{
+    max-width: 1440px;
+    padding-left: 20px;
+    padding-right:20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: blue;
+    text-align: center;
+}
+.accordine{
+    max-width: 700px;
+    margin: auto;
+}
+.accordine_item{
+    border: 2px solid red;
+    padding: 20px;
+}
+
+.accordine_content{
+    display: none;
+}
+.accordine_title{ 
+   
+    align-items: center;
+    gap: 10px;
+}
+.accordine_title h3{
+    flex: 1;
+    font-size:25px ;
+}
+.accordine_title.item + .accordine_content {
+    display: block;
+    padding-top: 20px;
+}
+
+.accordine_title.active i {
+    transform: rotate(180deg);
+}
+.accordine_title i{
+    font-size:30px;
+    cursor: pointer;
+}
+.accordine_title.active {
+    border-bottom: 2px solid red;
+}
